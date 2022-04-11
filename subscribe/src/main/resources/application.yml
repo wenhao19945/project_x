@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: subscribe # 项目名
+  profiles:
+    active: dev
+netty:
+  url: 127.0.0.1
+  port: 7750

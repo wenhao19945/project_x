@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: springboot-netty-client # 项目名
+
+  profiles:
+    active: dev
+
+netty:
+  channel: wen    #通道名
+  url: 127.0.0.1
+  port: 7750
+  threads:
+    boss: 1
+    worker: 4
+    business: 20 #业务线程数量

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @ClassName: EventLoopGroupConfig
  * @Author: WenHao
  * @Description: 使用ChannelGroup管理Channel, 维护terminalPhone->ChannelId->Channel 一对一映射关系
- * @Date Created in 2021/1/11 17:24
+ * @Date Created in 2020/1/11 17:24
  * @Modified By:
  */
 @Configuration

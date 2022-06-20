@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 /**
  * SatelliteEncoder 编码器
  * @Author wenhao
- * @Date 2021/2/4 19:05
+ * @Date 2020/2/4 19:05
  * @return
  * @Description //TODO
  */
@@ -23,7 +23,7 @@ public class SatelliteEncoder extends MessageToByteEncoder<SatelliteMessage> {
   /**
    * SatelliteEncoder encode 加码/转成字节流
    * @Author wenhao
-   * @Date 2021/2/4 17:47
+   * @Date 2020/2/4 19:47
    * @param ctx  通道
    * @param msg  入参
    * @param out  出参 传递到MessageToByteEncoder发送

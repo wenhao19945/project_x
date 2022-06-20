@@ -20,7 +20,7 @@ public class SpringContextUtils implements ApplicationContextAware {
      * 获取ApplicationContext
      * @param applicationContext
      * @author WenHao
-     * @date 2022/1/4 17:30 
+     * @date 2021/1/4 17:30
      */
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {

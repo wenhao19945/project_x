@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 /**
  * BaseEncoder 编码器
  * @Author wenhao
- * @Date 2021/2/4 19:05
+ * @Date 2020/2/4 19:05
  * @return
  * @Description //TODO
  */
@@ -22,7 +22,7 @@ public class BaseEncoder extends MessageToByteEncoder<BaseMessage> {
   /**
    * 加码/转成字节流
    * @author WenHao
-   * @date 2022/1/21 16:41
+   * @date 2020/1/21 16:41
    */
   @Override
   protected void encode(ChannelHandlerContext ctx, BaseMessage msg, ByteBuf out) {

@@ -6,7 +6,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @ClassName: Application
- * @Author: lixin
+ * @Author: wenhao
  * @Description: 启动类
  * @Date Created in 2020/12/24 14:17
  * @Modified By:

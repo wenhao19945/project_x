@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 /**
  * BaseDecoder解码器.
  * @author WenHao
- * @date 2022/1/20 16:23
+ * @date 2020/1/20 16:23
  */
 public class BaseDecoder extends MessageToMessageDecoder<ByteBuf> {
 
@@ -23,7 +23,7 @@ public class BaseDecoder extends MessageToMessageDecoder<ByteBuf> {
   /**
    * 统一解码
    * @author WenHao
-   * @date 2022/1/21 16:40
+   * @date 2020/1/21 16:40
    */
   @Override
   protected void decode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, List<Object> list) throws Exception {

@@ -19,7 +19,7 @@ import java.net.InetSocketAddress;
  * @ClassName: NettyClient
  * @Author: wenhao
  * @Description:
- * @Date Created in 2021/2/2 16:35
+ * @Date Created in 2020/2/2 16:35
  * @Modified By: Netty客户端
  */
 @Slf4j
@@ -54,7 +54,7 @@ public class NettyClient {
     /**
      * NettyClient start
      * @Author wenhao
-     * @Date 2021/2/2 18:57
+     * @Date 2020/2/2 18:57
      * @return boolean
      * @Description //TODO 启动TCP连接
      */
@@ -85,7 +85,7 @@ public class NettyClient {
     /**
      * NettyClient destroy
      * @Author wenhao
-     * @Date 2021/2/2 18:57
+     * @Date 2020/2/2 18:57
      * @return void
      * @Description //TODO 销毁
      */

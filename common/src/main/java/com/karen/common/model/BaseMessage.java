@@ -10,7 +10,7 @@ import java.io.Serializable;
  * 帧数据.
  * 2+2+4+8+2+2+4+n+4  至少30个字节
  * @author WenHao
- * @date 2022/1/19 18:24
+ * @date 2020/1/19 18:24
  */
 public class BaseMessage implements Serializable {
 
@@ -71,7 +71,7 @@ public class BaseMessage implements Serializable {
   /**
    * toByteBufMsg 生成报文 ByteBuf
    * @Author wenhao
-   * @Date 2021/1/29 9:42
+   * @Date 2020/1/29 9:42
    * @return io.netty.buffer.ByteBuf
    * @Description //TODO 在Encoder escape()方法处回收
    */

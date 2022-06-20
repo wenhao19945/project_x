@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * 解码器.
  * @Author:chensy
- * @Date:15:44 2020/12/25
+ * @Date:15:44 2020/2/4
  * @Description
  * @Modified By:
  */
@@ -22,7 +22,7 @@ public class SatelliteDecoder extends MessageToMessageDecoder<ByteBuf> {
   /**
    * SatelliteDecoder decode 协议解析
    * @Author wenhao
-   * @Date 2021/2/4 17:49
+   * @Date 2020/2/4 17:49
    * @param channelHandlerContext  通道
    * @param byteBuf  入参
    * @param list  出参，传递到NettyClientHandler

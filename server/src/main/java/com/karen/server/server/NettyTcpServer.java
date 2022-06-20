@@ -29,7 +29,7 @@ import org.springframework.stereotype.Component;
 /**
  * netty管道初始化.
  * @author WenHao
- * @date 2022/1/20 19:02
+ * @date 2021/1/20 19:02
  * @return
  */
 @Component
@@ -63,7 +63,7 @@ public class NettyTcpServer {
     /**
      * 构造线程池
      * @author WenHao
-     * @date 2022/1/20 19:06
+     * @date 2021/1/20 19:06
      * @return
      */
     public NettyTcpServer(){
@@ -95,7 +95,7 @@ public class NettyTcpServer {
      * 启动Server
      * TODO 仅 liunx 支持 EpollServerSocketChannel.class
      * @author WenHao
-     * @date 2022/1/20 19:07
+     * @date 2021/1/20 19:07
      */
     public void start() {
 
@@ -112,13 +112,17 @@ public class NettyTcpServer {
             });
 
         this.serverBootstrap.group(this.eventLoopGroupBoss, this.eventLoopGroupSelector)
+                // NioServerSocketChannel（用于服务端非阻塞地接收TCP连接）、NioSocketChannel（用于维持非阻塞的TCP连接）、
+                // NioDatagramChannel（用于非阻塞地处理UDP连接）、OioServerSocketChannel（用于服务端阻塞地接收TCP连接）、
+                // OioSocketChannel（用于阻塞地接收TCP连接）、OioDatagramChannel（用于阻塞地处理UDP连接）
                 .channel(NioServerSocketChannel.class)
                 //服务端可连接队列数,对应TCP/IP协议listen函数中backlog参数
                 .option(ChannelOption.SO_BACKLOG, 1024)
-                //立即写出
+                //立即写出,关闭关闭Nagle算法
                 .childOption(ChannelOption.TCP_NODELAY, true)
                 //在两小时内没有数据的通信时，TCP会自动发送一个活动探测数据报文
                 .childOption(ChannelOption.SO_KEEPALIVE, true)
+                //封装IP和端口信息，常用于Socket通信
                 .localAddress(new InetSocketAddress(this.port))
                 .childHandler(
                     new ChannelInitializer<SocketChannel>() {

@@ -7,7 +7,7 @@ import java.util.zip.CRC32;
 /**
  * @author WenHao
  * @ClassName crcUtils
- * @date 2022/1/21 19:40
+ * @date 2020/1/21 19:40
  * @Description
  */
 public class CrcUtils {

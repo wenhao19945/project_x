@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  * @ClassName: ChannelManager
  * @Author: WenHao
  * @Description: 使用ChannelGroup管理Channel, 维护terminalPhone->ChannelId->Channel 一对一映射关系
- * @Date Created in 2021/1/11 17:24
+ * @Date Created in 2020/1/11 17:24
  * @Modified By:
  */
 @Slf4j

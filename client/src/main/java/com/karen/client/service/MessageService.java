@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
  * @ClassName: MessageService
  * @Author: wenhao
  * @Description:
- * @Date Created in 2021/2/4 17:03
+ * @Date Created in 2020/2/4 17:03
  * @Modified By:
  */
 @Slf4j
@@ -53,7 +53,7 @@ public class MessageService {
     /**
      * MessageService loginMsg 发送登录报文
      * @Author wenhao
-     * @Date 2021/2/4 17:06
+     * @Date 2020/2/4 17:06
      * @return void
      * @Description //TODO
      */
@@ -87,7 +87,7 @@ public class MessageService {
     /**
      * getSatelliteMessageDef
      * @Author wenhao
-     * @Date 2021/2/4 17:37
+     * @Date 2020/2/4 17:37
      * @param bytes  数据体字节数组
      * @return SatelliteMessage
      * @Description //TODO

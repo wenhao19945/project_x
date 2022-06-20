@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  * @ClassName: NettyChannelInitializer
  * @Author: wenhao
  * @Description: netty管道初始化
- * @Date Created in 2021/1/11 17:24
+ * @Date Created in 2020/1/11 17:24
  * @Modified By:
  */
 @Component
